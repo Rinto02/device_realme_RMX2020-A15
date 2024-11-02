@@ -24,9 +24,14 @@ PRODUCT_MANUFACTURER := realme
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="RMX2020-user 11 RP1A.200720.011 1652239672541 release-keys" \
+    BuildFingerprint=realme/RMX2020/RMX2020:11/RP1A.200720.011/1652239672541:user/release-keys \
     DeviceName=RMX2020 \
     DeviceProduct=RMX2020 \
     SystemDevice=RMX2020 \
     SystemName=RMX2020
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BuildFingerprint)
