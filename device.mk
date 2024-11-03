@@ -20,10 +20,6 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# APN
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0.vendor \
