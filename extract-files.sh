@@ -109,6 +109,14 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q libui_shim.so "$2" || "$PATCHELF" --add-needed libui_shim.so "$2"
             ;;
+        vendor/lib64/lib3a.flash.so)
+            [ "$2" = "" ] && return 0
+            grep -q "liblog.so" "${2}" || "${PATCHELF_0_17_2}" --add-needed "liblog.so" "${2}"
+            ;;
+        vendor/lib/libmnl.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libcutils.so" "${2}" || "${PATCHELF}" --add-needed "libcutils.so" "${2}"
+            ;;
         *)
             return 1
             ;;
