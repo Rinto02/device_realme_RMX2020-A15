@@ -115,6 +115,8 @@ BOARD_USES_METADATA_PARTITION := true
 BOARD_ROOT_EXTRA_FOLDERS += metadata
 
 # Partitions
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
