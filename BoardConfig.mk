@@ -143,6 +143,9 @@ BOARD_SUPER_PARTITION_GROUPS := main
 BOARD_SUPER_PARTITION_ERROR_LIMIT := 6979321856
 BOARD_MAIN_PARTITION_LIST := product vendor system system_ext odm
 
+# Inherit Partitions Sizes From Los
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
