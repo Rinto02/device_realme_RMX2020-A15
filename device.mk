@@ -363,6 +363,7 @@ PRODUCT_PACKAGES += \
     libutilscallstack.vendor
 
 PRODUCT_PACKAGES += \
+    libbase_shim \
     libui_shim
 
 # Wi-Fi
