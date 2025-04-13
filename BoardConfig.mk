@@ -114,9 +114,6 @@ ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/manifests/manifest_nfc.xml
 BOARD_USES_METADATA_PARTITION := true
 BOARD_ROOT_EXTRA_FOLDERS += metadata
 
-# Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
-
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
@@ -146,7 +143,7 @@ BOARD_SUPER_PARTITION_ERROR_LIMIT := 6979321856
 BOARD_MAIN_PARTITION_LIST := product vendor system system_ext odm
 
 # Inherit Partitions Sizes From Los
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/pixelage/config/BoardConfigReservedSize.mk
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
@@ -162,7 +159,7 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 64
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2022-05-05
+VENDOR_SECURITY_PATCH := 2025-04-13
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
