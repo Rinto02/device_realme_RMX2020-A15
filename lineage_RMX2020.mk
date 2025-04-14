@@ -13,6 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
 # Inherit some common LineageOS stuff.
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
@@ -21,6 +22,15 @@ PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
 PRODUCT_MANUFACTURER := realme
+
+# AxonAosp
+AXION_CAMERA_REAR_INFO := 12,2,2
+AXION_CAMERA_FRONT_INFO := 5
+AXION_MAINTAINER := rinto
+AXION_PROCESSOR := Mediatek_Helio_G70
+TARGET_INCLUDE_VIPERFX := true
+AXION_CPU_SMALL_CORES := 0,1,2,3,4,5
+AXION_CPU_BIG_CORES := 6,7
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
