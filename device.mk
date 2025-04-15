@@ -68,7 +68,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session
 
 # Bootanimation
-TARGET_BOOT_ANIMATION_RES := 720
+TARGET_SCREEN_WIDTH := 720
 
 # Camera
 PRODUCT_PACKAGES += \
