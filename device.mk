@@ -45,9 +45,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
-    libaudiopreprocessing \
-    libbundlewrapper \
-    libdownmix \
     libtinycompress \
     libalsautils \
     libnbaio_mono
