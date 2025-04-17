@@ -36,3 +36,30 @@ prebuilt_hidl_interfaces {
         "vendor.mediatek.hardware.mtkcodecservice@1.1::IMtkCodecService",
     ],
 }
+
+prebuilt_hidl_interfaces {
+    name: "hidl_supplicant_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.wifi.supplicant@2.0::ISupplicant",
+    ],
+}
+
+prebuilt_hidl_interfaces { 
+    name: "hidl_mms_interface",
+    interfaces: [  
+        "vendor.mediatek.hardware.mms@1.0::IMms",
+        "vendor.mediatek.hardware.mms@1.1::IMms",
+        "vendor.mediatek.hardware.mms@1.2::IMms",
+        "vendor.mediatek.hardware.mms@1.3::IMms",
+        "vendor.mediatek.hardware.mms@1.4::IMms",
+        "vendor.mediatek.hardware.mms@1.5::IMms",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_keymaster_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.keymaster_attestation@1.0::IKeymasterDevice",
+        "vendor.mediatek.hardware.keymaster_attestation@1.1::IKeymasterDevice",
+    ],
+}
