@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelage_RMX2020.mk
+    $(LOCAL_DIR)/lineage_RMX2020.mk
