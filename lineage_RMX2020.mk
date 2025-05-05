@@ -12,18 +12,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common pixelageOS stuff.
-$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
+# Inherit some common matrixx stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := pixelage_RMX2020
+PRODUCT_NAME := lineage_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
 PRODUCT_MANUFACTURER := realme
 
-# Pixelage OS
-PIXELAGE_MAINTAINER := Rinto
+# Matrixx
+WITH_GMS := true
+WITH_GMS_COMMS_SUITE := true
+TARGET_SUPPORTS_WALLEFFECT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_STOCK_AICORE := true
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
