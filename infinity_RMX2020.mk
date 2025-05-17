@@ -25,7 +25,6 @@ PRODUCT_MANUFACTURER := realme
 # Infinity X
 INFINITY_MAINTAINER := Rinto
 TARGET_SUPPORTS_BLUR := true
-WITH_GAPPS := true
 USE_MOTO_CALCULATOR := false
 
 # Build info
