@@ -3,6 +3,7 @@ vendor_public_prop(vendor_audio_tuning_prop)
 
 # Camera
 vendor_public_prop(vendor_oplus_camera_prop)
+type vendor_camera_prop, property_type;
 
 # Fingerprint
 vendor_public_prop(vendor_oplus_fingerprint_prop)
