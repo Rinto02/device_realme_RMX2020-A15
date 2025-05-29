@@ -25,7 +25,6 @@ pm.dexopt.install=speed-profile
 # Display
 debug.sf.enable_hwc_vds=0
 sys.brightness.disable_gamma_conversion=true
-persist.sys.brightness.low.gamma=true
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
@@ -37,13 +36,6 @@ persist.sys.radio.force_lte_ca=true
 # IPO
 sys.ipo.disable=1
 sys.ipo.pwrdncap=2
-
-# Infinity X
-ro.infinity.soc=Mediatek Helio G70
-ro.infinity.battery=5000 mAh
-ro.infinity.display=720 x 1600, 60 Hz
-ro.infinity.camera=12MP + 2MP + 2M
-ro.product.marketname=Realme C3
 
 # Kernel
 ro.kernel.zio=38,108,105,16
