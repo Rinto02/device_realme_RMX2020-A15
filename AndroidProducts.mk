@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_RMX2020.mk
+    $(LOCAL_DIR)/clover_RMX2020.mk

@@ -12,20 +12,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common pixelageOS stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common Clover stuff.
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_RMX2020
+PRODUCT_NAME := clover_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
 PRODUCT_MANUFACTURER := realme
 
-# Infinity X
-INFINITY_MAINTAINER := Rinto
-TARGET_SUPPORTS_BLUR := true
-USE_MOTO_CALCULATOR := false
+# Clover assortment
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := false
+USE_PIXEL_CHARGER := true
+
+
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \

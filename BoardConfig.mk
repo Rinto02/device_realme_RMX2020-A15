@@ -139,7 +139,7 @@ BOARD_SUPER_PARTITION_ERROR_LIMIT := 6979321856
 BOARD_MAIN_PARTITION_LIST := product vendor system system_ext odm
 
 # Inherit Partitions Sizes From Los
--include vendor/infinity/config/BoardConfigReservedSize.mk
+-include vendor/clover/config/BoardConfigReservedSize.mk
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
@@ -155,7 +155,7 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 64
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2025-04-13
+VENDOR_SECURITY_PATCH := 2025-05-29
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
